@@ -70,19 +70,19 @@ The project is to outline the implementation details that showcases the integrat
 
 ### Implementation Steps
  
-Define a MuleSoft scheduler to trigger the integration flow at 9.00PM EST.
+- Define a MuleSoft scheduler to trigger the integration flow at 9.00PM EST.
 
-Create a connection to the cloud relational database.
+- Create a connection to the cloud relational database.
 
-Implement a query to fetch data from ViewInventoryLotInfo.
+- Implement a query to fetch data from ViewInventoryLotInfo.
 
-Data Transformation using DataWeave.
+- Data Transformation using DataWeave.
 
-Map database fields to  JSON structure.
+- Map database fields to  JSON structure.
 
-Set up HTTP POST to the EHR endpoint.
+- Set up HTTP POST to the EHR endpoint.
 
-Implement error handling for database and EHR connection issues.
+- Implement error handling for database and EHR connection issues.
  
 ## Setup
 
