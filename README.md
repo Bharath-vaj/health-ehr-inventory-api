@@ -76,11 +76,9 @@ The project is to outline the implementation details that showcases the integrat
 
 - Implement a query to fetch data from ViewInventoryLotInfo.
 
-- Data Transformation using DataWeave.
+- Use DataWeave to map the output from the Inventory Management System to the EHR, ensuring that each field from `ViewInventoryLotInfo` is accurately mapped to its corresponding field in the EHR system.
 
-- Map database fields to  JSON structure.
-
-- Set up HTTP POST to the EHR endpoint.
+- Send the Mapped Data to the EHR Endpoint:
 
 - Implement error handling for database and EHR connection issues.
  
