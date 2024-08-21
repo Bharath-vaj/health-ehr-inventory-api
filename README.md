@@ -62,25 +62,15 @@ This Experience API receives requests from the Visit end system and routes messa
 
 The Visit EAPI is responsible for creating `Immunization history` and retrieving `Patient Immunization`, `Patient Blood Test`, `Patient Insurance`, `Patient Appointment` data from System APIs.
 
-# Health-EHR-Inventory-api
+# Health EHR Inventory API
  
 ## Overview
-
-The `Health-EHR-Inventory-api` is Mule application that showcases the integration between a generic Inventory Management System (Inventory) and an Electronic Health Record (EHR) using MuleSoft. The system will retrieve inventory data from a cloud-based relational database and send it to the EHR in JSON format.
-
-### Implementation Steps
  
-- Define a `scheduler` to trigger the integration flow at 9.00 PM EST.
-
-- Create a connection to the cloud relational database.
-
-- Implement a query to fetch data from `ViewInventoryLotInfo`.
-
-- Use DataWeave to map the output from the Inventory Management System to the EHR, ensuring that each field from `ViewInventoryLotInfo` is accurately mapped to its corresponding field in the EHR system.
-
-- Send the Mapped Data to the HTTP POST `EHR Endpoint`.
-
-- Implement error handling for database and EHR connection issues.
+The `health-ehr-inventory-api` is Mule application that showcases the integration between a generic Inventory Management System (Inventory) and an Electronic Health Record (EHR) using MuleSoft.
+ 
+The `health-ehr-inventory-api-flow` triggers the process at 9PM EST everyday where the flow will retrieve inventory data from a cloud-based relational database and send it to the EHR in JSON format.
+ 
+Errors occured while connecting to Database or EHR system is retried for 3 times, if the error still persists the structured error response is logged.
  
 ## Setup
 
