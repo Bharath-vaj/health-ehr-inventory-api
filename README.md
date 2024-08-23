@@ -170,5 +170,5 @@ The main workflows are defined in separate YAML files within the `.github/workfl
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
-4. Commit your changes (`git commit -am 'Add new feature'`).
+
 
